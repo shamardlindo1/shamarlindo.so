@@ -69,17 +69,16 @@
     <p>Modeling to print is a different discipline from modeling to an idea. The drawing is a contract, and the parts only go together if you honor the parts of it that matter.</p>
   </article>
 
-  <!-- ===================== TOILETRIES CASE ===================== -->
-  <article class="detail" id="toiletries-case">
-    <h2>Watertight Toiletries Case</h2>
-    <p class="meta">PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
+  <!-- ===================== PACK-MATE ===================== -->
+  <article class="detail" id="pack-mate">
+    <h2>Pack-Mate — Toiletries Case</h2>
+    <p class="meta">Team project · PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
 
-    <p>A hard-sided case that has to stay dry inside. The design problem isn't the box — it's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
+    <p>A hard-sided toiletries case that packs flat and unfolds into a counter display, so the contents are laid out and reachable instead of dumped in a bag. The design problem isn't the box — it's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
 
     <figure class="shot">
-      <!-- Replace with: <img src="assets/toiletries-case.png" alt="Creo render of the toiletries case"> -->
-      <div class="ph">Add <code>assets/toiletries-case.png</code><br>— render of the closed case, and one of the lid detail</div>
-      <figcaption>The case, closed.</figcaption>
+      <img src="pack-mate.jpg" alt="Pack-Mate toiletries case, packed and unfolded">
+      <figcaption>Pack-Mate, packed and opened out into its counter layout.</figcaption>
     </figure>
 
     <h4>What I did</h4>
@@ -120,26 +119,48 @@
 
   <!-- ===================== RESEARCH ===================== -->
   <article class="detail" id="hemp-hurd">
-    <h2>Hemp Hurd Cellulose Extraction &amp; Characterization</h2>
-    <p class="meta">UNC Charlotte · Faculty-advised undergraduate research</p>
+    <h2>Extracting Nanocellulose from Hemp Hurd</h2>
+    <p class="meta">UNC Charlotte · Undergraduate research, Department of Mechanical Engineering</p>
 
-    <p>Hemp hurd is the woody core left behind when hemp is processed for fiber — a high-volume agricultural byproduct with very little to do. This project asks whether the cellulose in it can be pulled out and compounded into a composite feedstock that's worth molding, and then answers the question with instruments rather than optimism.</p>
+    <p>Hemp hurd is the woody core left behind when hemp is processed for fiber: a high-volume agricultural byproduct with very little to do. Cellulose has been pulled out of it before, and whole ground hurd has been used to reinforce composites — but not as extracted microfiber in injection-molded plastics. That gap is the project.</p>
+
+    <p>Hurd is sold ground to several particle sizes, which raises the practical question we set out to answer: <strong>which grind is actually worth starting from?</strong> We ran four — sieve unders, Mill 30, Mill 60, and Mill 99 — through the same extraction and compared what came back.</p>
 
     <figure class="shot">
-      <!-- Replace with: <img src="assets/sem-micrograph.png" alt="SEM micrograph of the composite"> -->
-      <div class="ph">Add <code>assets/sem-micrograph.png</code><br>— an SEM micrograph, FTIR spectrum, or TGA curve</div>
-      <figcaption>Characterization is where the claims get tested.</figcaption>
+      <img src="hemp-hurd-varieties.jpg" alt="Four ground hemp hurd varieties labeled by median particle size">
+      <figcaption>The four varieties after drying and grinding, labeled by median particle size — 1410&nbsp;µm and up, 1231&nbsp;µm, 1003&nbsp;µm, and 227&nbsp;µm.</figcaption>
     </figure>
 
-    <h4>The chain</h4>
+    <h4>Extraction</h4>
+    <p>10&nbsp;g of each grind went through an identical procedure, so any difference in the output traces back to the feedstock rather than the process:</p>
     <ul>
-      <li><strong>Extraction</strong> — separating cellulose from the lignin and hemicellulose it's bound up with in the hurd.</li>
-      <li><strong>Compounding</strong> — twin-screw extrusion to disperse the filler through the matrix, where screw profile and residence time decide whether you get a composite or just a filled plastic.</li>
-      <li><strong>Molding</strong> — injection molding ASTM specimens so the mechanical results are comparable to everyone else's.</li>
-      <li><strong>Characterization</strong> — FTIR to confirm what chemistry survived extraction, TGA for thermal stability through the processing window, SEM to see whether the filler actually wetted out or just sat there.</li>
+      <li>A two-hour sodium hydroxide wash at 70&nbsp;°C</li>
+      <li>Two one-hour bleaching treatments in sodium chlorite</li>
+      <li>A 30-minute room-temperature sodium hydroxide wash</li>
+      <li>Oven drying at 105&nbsp;°C, then grinding</li>
     </ul>
 
-    <p>Processing is not a neutral step: every stage changes the material, and the characterization exists to find out how much.</p>
+    <h4>Characterization</h4>
+    <p>Purity and thermal stability were assessed by TGA and DTG; particle size was measured by optical microscopy. Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose — meaning the extraction worked on every grind, and the decision came down to yield and purity instead.</p>
+
+    <figure class="shot">
+      <img src="hemp-hurd-dtg.jpg" alt="DTG curves of cellulose microfibers after extraction for all four hurd varieties">
+      <figcaption>DTG of the extracted microfibers. The four varieties track each other closely — the extraction is not the differentiator.</figcaption>
+    </figure>
+
+    <h4>What we found</h4>
+    <ul>
+      <li>Cellulose microfibers <strong>can</strong> be extracted from hemp hurd.</li>
+      <li>Mill 99 gave the highest-purity fibers but was significantly harder to process.</li>
+      <li>Sieve unders — the cheapest, coarsest grind — produced fibers of comparable purity to Mill 99 at more than double the yield: 10&nbsp;g of sieve unders returned about 3.5&nbsp;g of fibers, against roughly 1.5&nbsp;g from Mill 99.</li>
+      <li>Weighing affordability, yield, and purity, <strong>sieve unders</strong> won. The expensive input wasn't buying anything.</li>
+    </ul>
+
+    <h4>Next steps</h4>
+    <p>Production from sieve unders has been scaled up to make enough fiber for six formulations of fiber and resin. Stress testing those biocomposite samples is what will confirm whether hurd-derived microfibers are actually viable as reinforcement.</p>
+
+    <p style="margin-top:22px"><a class="inline-link" href="hemp-hurd-poster.pdf" target="_blank" rel="noopener">Read the full research poster (PDF) →</a></p>
+    <p style="font-size:13.5px; color:var(--muted); margin-top:10px">Poster: Liam Eckhart, Shamar Lindo, Ali Alkhabbaz, Md Shah Nawaz Arafan, and Roger Tipton (PI), Department of Mechanical Engineering, UNC Charlotte. Supported by the Office of Undergraduate Research.</p>
   </article>
 
   <p style="margin-top:36px"><a class="inline-link" href="index.html">← Back home</a></p>
@@ -155,6 +176,15 @@
 
 <script>
   document.querySelectorAll('.yr').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+  document.querySelectorAll('.shot img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var d = document.createElement('div');
+      d.className = 'ph';
+      d.textContent = 'Image coming soon';
+      img.replaceWith(d);
+    });
+  });
+
 </script>
 
 </body>
