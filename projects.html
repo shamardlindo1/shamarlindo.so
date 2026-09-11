@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Shamar Lindo</title>
+<meta name="description" content="Project write-ups — mechanical design in PTC Creo, embedded electronics, and materials research.">
+<meta property="og:title" content="Projects — Shamar Lindo">
+<meta property="og:description" content="Mechanical design in PTC Creo, embedded electronics, and materials research.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="me" href="index.html">Shamar Lindo</a>
+    <a class="link" href="index.html#about">About</a>
+    <a class="link" href="projects.html" aria-current="page">Projects</a>
+    <a class="link" href="index.html#research">Research</a>
+    <a class="link" href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <header class="page">
+    <h1>Projects</h1>
+    <p>Longer write-ups of the design and build work — what the problem was, what I actually did, and what I'd change.</p>
+  </header>
+
+  <!-- ===================== AIR ENGINE ===================== -->
+  <article class="detail" id="air-engine">
+    <h2>Air Engine Assembly</h2>
+    <p class="meta">PTC Creo · Part &amp; assembly modeling, GD&amp;T, technical drawings</p>
+
+    <p>A complete pneumatic engine built from a set of technical drawings. Every component was modeled to print, constrained into a working assembly, and then detailed back out into drawings of my own. The engine itself is the excuse; the real exercise is reading intent off a drawing and matching it exactly — where the tolerance is tight because something has to slide, and where it's open because nothing depends on it.</p>
+
+    <figure class="shot">
+      <!-- Replace this div with: <img src="assets/air-engine-assembly.png" alt="Creo render of the assembled air engine"> -->
+      <div class="ph">Add <code>assets/air-engine-assembly.png</code><br>— shaded Creo render of the full assembly</div>
+      <figcaption>The complete assembly, shaded in Creo.</figcaption>
+    </figure>
+
+    <h4>What I did</h4>
+    <ul>
+      <li>Modeled each part individually from the supplied drawings — cylinder, piston, crankshaft, flywheel, and the supporting hardware — rather than modeling the assembly top-down.</li>
+      <li>Constrained the parts into an assembly that moves the way the mechanism should, so interference and travel could be checked rather than assumed.</li>
+      <li>Produced detail drawings with GD&amp;T, choosing datums and controls that reflect how each feature is actually located and used.</li>
+      <li>Applied fits deliberately at the moving interfaces, and left non-critical features open so the part stays cheap to make.</li>
+    </ul>
+
+    <div class="shot shot-row">
+      <figure class="shot" style="margin:0">
+        <!-- Replace with: <img src="assets/air-engine-drawing.png" alt="Detail drawing with GD&T"> -->
+        <div class="ph">Add <code>assets/air-engine-drawing.png</code><br>— a detail drawing with GD&amp;T</div>
+      </figure>
+      <figure class="shot" style="margin:0">
+        <!-- Replace with: <img src="assets/air-engine-exploded.png" alt="Exploded view"> -->
+        <div class="ph">Add <code>assets/air-engine-exploded.png</code><br>— exploded view</div>
+      </figure>
+    </div>
+
+    <h4>What I took from it</h4>
+    <p>Modeling to print is a different discipline from modeling to an idea. The drawing is a contract, and the parts only go together if you honor the parts of it that matter.</p>
+  </article>
+
+  <!-- ===================== TOILETRIES CASE ===================== -->
+  <article class="detail" id="toiletries-case">
+    <h2>Watertight Toiletries Case</h2>
+    <p class="meta">PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
+
+    <p>A hard-sided case that has to stay dry inside. The design problem isn't the box — it's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
+
+    <figure class="shot">
+      <!-- Replace with: <img src="assets/toiletries-case.png" alt="Creo render of the toiletries case"> -->
+      <div class="ph">Add <code>assets/toiletries-case.png</code><br>— render of the closed case, and one of the lid detail</div>
+      <figcaption>The case, closed.</figcaption>
+    </figure>
+
+    <h4>What I did</h4>
+    <ul>
+      <li>Designed the lid-to-body interface around a deliberate tolerance stack instead of a nominal gap, so the seal survives the range of parts that would actually come out of a mold.</li>
+      <li>Selected clearance and interference fits at the sealing surfaces, trading closing force against sealing reliability.</li>
+      <li>Kept the geometry moldable throughout — draft, uniform wall thickness, and no features that would need side action for no reason.</li>
+      <li>Documented the critical dimensions on the drawing so the fit is inspectable, not just intended.</li>
+    </ul>
+
+    <h4>What I'd change</h4>
+    <p>The next version gets a gasket groove rather than relying on the plastic-to-plastic interface alone — it decouples the seal from the molded tolerance and makes the closing force a design choice instead of a consequence.</p>
+  </article>
+
+  <!-- ===================== ULTRASONIC ===================== -->
+  <article class="detail" id="ultrasonic">
+    <h2>Ultrasonic Ranging &amp; Servo Sweep</h2>
+    <p class="meta">Arduino C/C++ · HC-SR04, servo control, Processing</p>
+
+    <p>An HC-SR04 ultrasonic sensor mounted on a servo, sweeping an arc and reporting distance at each angle. The Arduino handles timing and motion; a Processing sketch on the host draws the returns live, so the scene in front of the sensor shows up as a picture rather than a column of numbers.</p>
+
+    <figure class="shot">
+      <!-- Replace with: <img src="assets/ultrasonic-rig.jpg" alt="The sensor and servo rig"> -->
+      <div class="ph">Add <code>assets/ultrasonic-rig.jpg</code><br>— photo of the rig, or a screenshot of the Processing display</div>
+      <figcaption>Sensor and servo on the bench.</figcaption>
+    </figure>
+
+    <h4>What I did</h4>
+    <ul>
+      <li>Wrote the firmware in C/C++: triggering the sensor, timing the echo, converting pulse width to distance, and stepping the servo through its sweep.</li>
+      <li>Paced the sweep against the sensor's settling time so readings aren't taken while the head is still moving — the difference between a clean scan and noise.</li>
+      <li>Streamed angle-and-distance pairs over serial and rendered them in Processing as a live polar plot.</li>
+    </ul>
+
+    <h4>What I took from it</h4>
+    <p>Most of the work in a sensor project is not the sensor. It's the timing around it, and deciding which readings to trust.</p>
+  </article>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <article class="detail" id="hemp-hurd">
+    <h2>Hemp Hurd Cellulose Extraction &amp; Characterization</h2>
+    <p class="meta">UNC Charlotte · Faculty-advised undergraduate research</p>
+
+    <p>Hemp hurd is the woody core left behind when hemp is processed for fiber — a high-volume agricultural byproduct with very little to do. This project asks whether the cellulose in it can be pulled out and compounded into a composite feedstock that's worth molding, and then answers the question with instruments rather than optimism.</p>
+
+    <figure class="shot">
+      <!-- Replace with: <img src="assets/sem-micrograph.png" alt="SEM micrograph of the composite"> -->
+      <div class="ph">Add <code>assets/sem-micrograph.png</code><br>— an SEM micrograph, FTIR spectrum, or TGA curve</div>
+      <figcaption>Characterization is where the claims get tested.</figcaption>
+    </figure>
+
+    <h4>The chain</h4>
+    <ul>
+      <li><strong>Extraction</strong> — separating cellulose from the lignin and hemicellulose it's bound up with in the hurd.</li>
+      <li><strong>Compounding</strong> — twin-screw extrusion to disperse the filler through the matrix, where screw profile and residence time decide whether you get a composite or just a filled plastic.</li>
+      <li><strong>Molding</strong> — injection molding ASTM specimens so the mechanical results are comparable to everyone else's.</li>
+      <li><strong>Characterization</strong> — FTIR to confirm what chemistry survived extraction, TGA for thermal stability through the processing window, SEM to see whether the filler actually wetted out or just sat there.</li>
+    </ul>
+
+    <p>Processing is not a neutral step: every stage changes the material, and the characterization exists to find out how much.</p>
+  </article>
+
+  <p style="margin-top:36px"><a class="inline-link" href="index.html">← Back home</a></p>
+
+</main>
+
+<footer>
+  <span>© <span class="yr">2026</span> Shamar Lindo</span>
+  <span class="spacer"><a href="index.html">Home</a></span>
+  <a href="mailto:shamardlindo@gmail.com">Email</a>
+  <a href="https://github.com/shamardlindo1">GitHub</a>
+</footer>
+
+<script>
+  document.querySelectorAll('.yr').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+</script>
+
+</body>
+</html>

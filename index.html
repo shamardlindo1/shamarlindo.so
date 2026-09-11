@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shamar Lindo</title>
+<meta name="description" content="Shamar Lindo — mechanical engineering student at UNC Charlotte. CAD, manufacturing, and materials research.">
+<meta property="og:title" content="Shamar Lindo">
+<meta property="og:description" content="Mechanical engineering student at UNC Charlotte. CAD, manufacturing, and materials research.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a class="me" href="#top">Shamar Lindo</a>
+    <a class="link" href="#about">About</a>
+    <a class="link" href="#projects">Projects</a>
+    <a class="link" href="#research">Research</a>
+    <a class="link" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <h1>Shamar Lindo</h1>
+    <p class="tagline">Mechanical engineering student at UNC&nbsp;Charlotte.</p>
+    <p>I design parts that have to survive manufacturing — modeling in Creo with real tolerance fits and GD&amp;T, then checking the assumptions against how the thing actually gets made. Lately that means undergraduate materials research: extruding a bio-based composite, molding test specimens, and characterizing what comes out.</p>
+    <p class="status"><span class="dot"></span> Seeking a co-op or internship — Summer 2027, Fall 2027, Spring 2028</p>
+  </header>
+
+  <section id="about">
+    <h2 class="label">About</h2>
+    <div class="about-grid">
+      <div class="portrait">
+        <!-- To use a photo: drop the file in assets/ and replace the line below with
+             <img src="assets/portrait.jpg" alt="Shamar Lindo"> -->
+        <span class="monogram">SL</span>
+      </div>
+      <div class="prose">
+        <p>I'm a mechanical engineering major at the University of North Carolina at Charlotte, class of December 2028. My focus sits where design meets manufacturing: CAD and drawings on one end, injection molding, extrusion, and materials testing on the other.</p>
+        <p>Because I graduate in December, a full-semester co-op in the spring or fall doesn't push back my degree — which makes me available for longer stretches than most students on a May timeline.</p>
+        <p>Right now most of my hands-on time goes to <a href="#research">undergraduate materials research</a>, taking hemp hurd from raw agricultural byproduct through to molded, characterized test specimens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="label">Projects</h2>
+
+    <a class="entry" href="projects.html#air-engine">
+      <div class="top">
+        <h3>Air Engine Assembly</h3>
+        <span class="when">PTC Creo</span>
+      </div>
+      <p>A complete pneumatic engine modeled from a set of technical drawings — every part built to print, constrained into a working assembly, and detailed back out as drawings with GD&amp;T.</p>
+      <div class="tags">
+        <span class="tag">Part &amp; assembly modeling</span>
+        <span class="tag">GD&amp;T</span>
+        <span class="tag">Technical drawings</span>
+      </div>
+    </a>
+
+    <a class="entry" href="projects.html#toiletries-case">
+      <div class="top">
+        <h3>Watertight Toiletries Case</h3>
+        <span class="when">PTC Creo</span>
+      </div>
+      <p>A sealed enclosure designed around its tolerance stack: fits chosen so the lid seats reliably without fighting the user, and geometry kept moldable throughout.</p>
+      <div class="tags">
+        <span class="tag">Tolerance fits</span>
+        <span class="tag">Design for manufacturing</span>
+        <span class="tag">Sealing</span>
+      </div>
+    </a>
+
+    <a class="entry" href="projects.html#ultrasonic">
+      <div class="top">
+        <h3>Ultrasonic Ranging &amp; Servo Sweep</h3>
+        <span class="when">Arduino</span>
+      </div>
+      <p>An HC-SR04 ultrasonic sensor mounted on a servo, sweeping an arc and streaming distance readings to a Processing sketch that renders them live.</p>
+      <div class="tags">
+        <span class="tag">Arduino C/C++</span>
+        <span class="tag">HC-SR04</span>
+        <span class="tag">Servo control</span>
+        <span class="tag">Processing</span>
+      </div>
+    </a>
+
+    <p style="margin-top:22px"><a class="inline-link" href="projects.html">Full project write-ups →</a></p>
+  </section>
+
+  <section id="research">
+    <h2 class="label">Research &amp; Experience</h2>
+    <article class="entry">
+      <div class="top">
+        <h3>Undergraduate Researcher</h3>
+        <span class="when">UNC Charlotte</span>
+      </div>
+      <p style="color:var(--fg); font-family:var(--serif); font-size:18px; margin-bottom:12px">Hemp Hurd Cellulose Extraction &amp; Characterization</p>
+      <p>Faculty-advised research turning hemp hurd — the woody core left over from fiber processing — into a usable composite feedstock. I work across the full chain: extracting cellulose, compounding by twin-screw extrusion, injection molding ASTM specimens, and characterizing the result by FTIR, TGA, and SEM to see what the processing actually did to the material.</p>
+      <div class="tags">
+        <span class="tag">Twin-screw extrusion</span>
+        <span class="tag">Injection molding</span>
+        <span class="tag">ASTM specimen testing</span>
+        <span class="tag">FTIR / TGA / SEM</span>
+      </div>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2 class="label">Skills</h2>
+    <dl class="skills">
+      <div class="row">
+        <dt>CAD</dt>
+        <dd>PTC Creo — part and assembly modeling, GD&amp;T, tolerance fits, technical drawings. SolidWorks.</dd>
+      </div>
+      <div class="row">
+        <dt>Manufacturing</dt>
+        <dd>Injection molding, twin-screw extrusion, design for manufacturability.</dd>
+      </div>
+      <div class="row">
+        <dt>Materials</dt>
+        <dd>ASTM specimen preparation and testing; FTIR, TGA, and SEM characterization.</dd>
+      </div>
+      <div class="row">
+        <dt>Electronics &amp; Code</dt>
+        <dd>Arduino C/C++, Processing, sensor integration and servo control, HTML/CSS.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section id="contact">
+    <h2 class="label">Contact</h2>
+    <div class="prose">
+      <p>Open to co-op and internship conversations, and happy to talk through any of the work above in detail.</p>
+    </div>
+    <ul class="contact-list" style="margin-top:20px">
+      <li><a href="mailto:shamardlindo@gmail.com"><span class="k">Email</span><span class="v">shamardlindo@gmail.com</span></a></li>
+      <li><a href="https://github.com/shamardlindo1" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/shamardlindo1</span></a></li>
+      <!-- Add when you have them:
+      <li><a href="https://www.linkedin.com/in/HANDLE" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">linkedin.com/in/HANDLE</span></a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener"><span class="k">Résumé</span><span class="v">resume.pdf</span></a></li>
+      -->
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <span>© <span class="yr">2026</span> Shamar Lindo</span>
+  <span class="spacer"><a href="projects.html">Projects</a></span>
+  <a href="mailto:shamardlindo@gmail.com">Email</a>
+  <a href="https://github.com/shamardlindo1">GitHub</a>
+</footer>
+
+<script>
+  document.querySelectorAll('.yr').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+</script>
+
+</body>
+</html>
