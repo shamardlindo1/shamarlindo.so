@@ -339,3 +339,54 @@ footer .spacer { margin-left: auto; }
   margin: 0 0 8px;
   line-height: 1;
 }
+
+/* ---------- data table ---------- */
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0 8px;
+  font-size: 14.5px;
+}
+table.data caption {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-bottom: 10px;
+}
+table.data th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 1px solid var(--fg);
+  padding: 0 12px 8px 0;
+  vertical-align: bottom;
+}
+table.data th .note {
+  display: block;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: .75;
+  margin-top: 2px;
+}
+table.data td {
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid var(--rule);
+  font-variant-numeric: tabular-nums;
+}
+table.data tbody tr:last-child td { border-bottom: 0; }
+.fignote { font-size: 13.5px; color: var(--muted); margin-top: 4px; }
+
+blockquote.pull {
+  margin: 26px 0;
+  padding: 0 0 0 20px;
+  border-left: 2px solid var(--accent);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.45;
+}
