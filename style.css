@@ -390,3 +390,21 @@ blockquote.pull {
   font-size: 19px;
   line-height: 1.45;
 }
+
+pre.code {
+  background: var(--ph-bg);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 16px 0;
+}
+code {
+  font-size: .93em;
+  background: var(--ph-bg);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+pre.code code { background: none; padding: 0; }

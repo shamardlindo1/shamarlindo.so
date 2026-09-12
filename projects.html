@@ -93,28 +93,56 @@
     <p>The next version gets a gasket groove rather than relying on the plastic-to-plastic interface alone — it decouples the seal from the molded tolerance and makes the closing force a design choice instead of a consequence.</p>
   </article>
 
-  <!-- ===================== ULTRASONIC ===================== -->
+  <!-- ===================== RADAR ===================== -->
   <article class="detail" id="ultrasonic">
-    <h2>Ultrasonic Ranging &amp; Servo Sweep</h2>
-    <p class="meta">Arduino C/C++ · HC-SR04, servo control, Processing</p>
+    <h2>Arduino Radar</h2>
+    <p class="meta">Arduino C/C++ &middot; HC-SR04, SG90 servo, Processing &middot; Built and debugged, August 2026</p>
 
-    <p>An HC-SR04 ultrasonic sensor mounted on a servo, sweeping an arc and reporting distance at each angle. The Arduino handles timing and motion; a Processing sketch on the host draws the returns live, so the scene in front of the sensor shows up as a picture rather than a column of numbers.</p>
+    <p>An HC-SR04 ultrasonic sensor rides on a servo horn, sweeping 15&deg; to 165&deg; and taking a distance reading at every degree. The Arduino streams each angle/distance pair over USB and a Processing sketch draws a live radar display, objects inside 40&nbsp;cm appearing as red returns at their true bearing.</p>
 
     <figure class="shot">
-      <!-- Replace with: <img src="assets/ultrasonic-rig.jpg" alt="The sensor and servo rig"> -->
-      <div class="ph">Add <code>assets/ultrasonic-rig.jpg</code><br>— photo of the rig, or a screenshot of the Processing display</div>
-      <figcaption>Sensor and servo on the bench.</figcaption>
+      <img src="radar-build.jpg" alt="The radar rig: Arduino, breadboard, servo and the ultrasonic sensor in its wooden bracket">
+      <figcaption>The finished rig. The breadboard carries nothing but 5&nbsp;V and ground &mdash; every signal line runs straight from device to pin.</figcaption>
     </figure>
 
-    <h4>What I did</h4>
+    <h4>How it works</h4>
     <ul>
-      <li>Wrote the firmware in C/C++: triggering the sensor, timing the echo, converting pulse width to distance, and stepping the servo through its sweep.</li>
-      <li>Paced the sweep against the sensor's settling time so readings aren't taken while the head is still moving — the difference between a clean scan and noise.</li>
-      <li>Streamed angle-and-distance pairs over serial and rendered them in Processing as a live polar plot.</li>
+      <li>TRIG on D10, ECHO on D11, servo signal on D12. The breadboard exists only to split the Arduino's single 5&nbsp;V pin between two devices.</li>
+      <li>A 10&nbsp;µs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code> &mdash; halved because the pulse makes a round trip.</li>
+      <li><code>pulseIn()</code> carries a 25&nbsp;ms timeout and returns a sentinel of 200&nbsp;cm on a miss, so a silent sweep can't stall the whole loop.</li>
+      <li>Readings go out as <code>angle,distance.</code> packets at 9600 baud &mdash; comma between the numbers, period to close the packet.</li>
     </ul>
 
-    <h4>What I took from it</h4>
-    <p>Most of the work in a sensor project is not the sensor. It's the timing around it, and deciding which readings to trust.</p>
+    <p>The Processing display departs from the usual tutorial version in three ways: it auto-detects the serial port and lists what it found rather than hardcoding a COM number; it builds its font at runtime with <code>createFont()</code>, removing a manual step that silently breaks the sketch when skipped; and it draws to a virtual 1920&times;1080 canvas scaled to the real display, so it renders correctly on any monitor.</p>
+
+    <h4>It didn't work the first time</h4>
+    <p>Every distance came back as 200 &mdash; the no-echo sentinel &mdash; while the angle counter advanced normally and the display cheerfully reported "Out of Range" at every bearing.</p>
+
+    <p>I wrote a diagnostic sketch that fired the sensor twice per cycle, once with TRIG and ECHO as wired and once with the pins swapped, printing raw <code>pulseIn()</code> durations for both:</p>
+
+    <pre class="code">TRIG=10 ECHO=11 -&gt; 0 us = 0.00 cm
+TRIG=11 ECHO=10 -&gt; 0 us = 0.00 cm</pre>
+
+    <p>Zero on both orderings ruled out a swapped wire and pointed at power rather than signal. I then stripped the circuit to four wires running straight from sensor to Arduino &mdash; no breadboard, no servo &mdash; which eliminated every intermediate connection in one step:</p>
+
+    <pre class="code">echo = 1242 us -&gt; 21.11 cm
+echo = 1457 us -&gt; 24.77 cm
+echo = 1759 us -&gt; 29.90 cm</pre>
+
+    <blockquote class="pull">The sensor was fine. The 5&nbsp;V feed entered the breadboard's power rail on the left half of the board and ground entered on the right &mdash; and those rails are electrically split at the midpoint. No component could ever have power and ground at the same time.</blockquote>
+
+    <p>Reviewing a photograph of the original circuit turned up three more faults I hadn't seen looking straight at the board: two signal wires joined mid-air instead of seated in pins, one wire resting on the board without being in a hole, and wire-to-wire joints made across rows that are electrically isolated from each other.</p>
+
+    <h4>What I'd tell someone building this</h4>
+    <ul>
+      <li><strong>Isolate before you iterate.</strong> I spent several rounds adjusting a circuit with multiple unknowns in it. Cutting back to four direct wires answered the question immediately.</li>
+      <li><strong>Know what a test actually proves.</strong> Sequential angles in the serial stream look like evidence the servo is turning. They aren't &mdash; those numbers come from the loop counter and print whether or not a servo is even attached.</li>
+      <li><strong>Put timeouts on blocking calls.</strong> Without one, <code>pulseIn()</code> stalls the entire sweep on a missed echo instead of failing visibly.</li>
+      <li><strong>Breadboard rails are not continuous.</strong> The split at the midpoint is the quietest wiring fault on a full-size board.</li>
+    </ul>
+
+    <h4>Finished state</h4>
+    <p>The sketch compiles to 4,326 bytes of flash (13%) and 229 bytes of SRAM (11%). The sweep runs continuously, the serial stream carries valid distances at every angle, and objects placed within 40&nbsp;cm are drawn at the correct bearing.</p>
   </article>
 
   <!-- ===================== RESEARCH ===================== -->
