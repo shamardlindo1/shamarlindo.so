@@ -101,8 +101,13 @@
     <p>An HC-SR04 ultrasonic sensor rides on a servo horn, sweeping 15&deg; to 165&deg; and taking a distance reading at every degree. The Arduino streams each angle/distance pair over USB and a Processing sketch draws a live radar display, objects inside 40&nbsp;cm appearing as red returns at their true bearing.</p>
 
     <figure class="shot">
-      <img src="radar-build.jpg" alt="The radar rig: Arduino, breadboard, servo and the ultrasonic sensor in its wooden bracket">
+      <img src="assets/arduino-radar-rig.jpg" alt="The radar rig: Arduino, breadboard, servo and the ultrasonic sensor in its wooden bracket">
       <figcaption>The finished rig. The breadboard carries nothing but 5&nbsp;V and ground &mdash; every signal line runs straight from device to pin.</figcaption>
+    </figure>
+
+    <figure class="shot">
+      <img src="assets/arduino-radar-top.jpg" alt="Top-down view of the finished radar rig" loading="lazy">
+      <figcaption>The same rig from above.</figcaption>
     </figure>
 
     <h4>How it works</h4>
@@ -132,6 +137,17 @@ echo = 1759 us -&gt; 29.90 cm</pre>
     <blockquote class="pull">The sensor was fine. The 5&nbsp;V feed entered the breadboard's power rail on the left half of the board and ground entered on the right &mdash; and those rails are electrically split at the midpoint. No component could ever have power and ground at the same time.</blockquote>
 
     <p>Reviewing a photograph of the original circuit turned up three more faults I hadn't seen looking straight at the board: two signal wires joined mid-air instead of seated in pins, one wire resting on the board without being in a hole, and wire-to-wire joints made across rows that are electrically isolated from each other.</p>
+
+    <div class="shot shot-row">
+      <figure class="shot" style="margin:0">
+        <img src="assets/arduino-radar-bench.jpg" alt="Early bench setup of the radar during debugging" loading="lazy">
+        <figcaption>An early bench setup while debugging.</figcaption>
+      </figure>
+      <figure class="shot" style="margin:0">
+        <img src="assets/arduino-radar-wiring.jpg" alt="Breadboard wiring from an earlier build of the radar" loading="lazy">
+        <figcaption>The wiring before the rebuild.</figcaption>
+      </figure>
+    </div>
 
     <h4>What I'd tell someone building this</h4>
     <ul>
