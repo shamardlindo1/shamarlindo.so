@@ -17,222 +17,253 @@
 <body>
 
 <nav>
-  <div class="inner">
-    <a class="me" href="index.html">Shamar Lindo</a>
-    <a class="link" href="index.html#about">About</a>
-    <a class="link" href="projects.html" aria-current="page">Projects</a>
-    <a class="link" href="index.html#research">Research</a>
-    <a class="link" href="index.html#contact">Contact</a>
-  </div>
+<div class="inner">
+<a class="me" href="index.html">Shamar Lindo</a>
+<a class="link" href="index.html#about">About</a>
+<a class="link" href="projects.html" aria-current="page">Projects</a>
+<a class="link" href="index.html#research">Research</a>
+<a class="link" href="index.html#contact">Contact</a>
+</div>
 </nav>
 
 <main>
 
-  <header class="page">
-    <h1>Projects</h1>
-    <p>Longer write-ups of the design and build work — what the problem was, what I actually did, and what I'd change.</p>
-  </header>
+<header class="page">
+<h1>Projects</h1>
+<p>Longer write-ups of the design and build work — what the problem was, what I actually did, and what I'd change.</p>
+</header>
 
-  <!-- ===================== AIR ENGINE ===================== -->
-  <article class="detail" id="air-engine">
-    <h2>Air Engine Assembly</h2>
-    <p class="meta">PTC Creo · Part &amp; assembly modeling, GD&amp;T, technical drawings</p>
+<!-- ===================== AIR ENGINE ===================== -->
+<article class="detail" id="air-engine">
+<h2>Air Engine Assembly</h2>
+<p class="meta">PTC Creo · Part &amp; assembly modeling, GD&amp;T, technical drawings</p>
 
-    <p>A complete pneumatic engine built from a set of technical drawings. Every component was modeled to print, constrained into a working assembly, and then detailed back out into drawings of my own. The engine itself is the excuse; the real exercise is reading intent off a drawing and matching it exactly — where the tolerance is tight because something has to slide, and where it's open because nothing depends on it.</p>
+<p>A complete pneumatic engine built from a set of technical drawings. Every component was modeled to print, constrained into a working assembly, and then detailed back out into drawings of my own. The engine itself is the excuse; the real exercise is reading intent off a drawing and matching it exactly — where the tolerance is tight because something has to slide, and where it's open because nothing depends on it.</p>
 
-    <figure class="shot">
-      <!-- Replace this div with: <img src="assets/air-engine-assembly.png" alt="Creo render of the assembled air engine"> -->
-      <div class="ph">Add <code>assets/air-engine-assembly.png</code><br>— shaded Creo render of the full assembly</div>
-      <figcaption>The complete assembly, shaded in Creo.</figcaption>
-    </figure>
+<figure class="shot">
+<!-- Replace this div with: <img src="assets/air-engine-assembly.png" alt="Creo render of the assembled air engine"> -->
+<div class="ph">Add <code>assets/air-engine-assembly.png</code><br>— shaded Creo render of the full assembly</div>
+<figcaption>The complete assembly, shaded in Creo.</figcaption>
+</figure>
 
-    <h4>What I did</h4>
-    <ul>
-      <li>Modeled each part individually from the supplied drawings — cylinder, piston, crankshaft, flywheel, and the supporting hardware — rather than modeling the assembly top-down.</li>
-      <li>Constrained the parts into an assembly that moves the way the mechanism should, so interference and travel could be checked rather than assumed.</li>
-      <li>Produced detail drawings with GD&amp;T, choosing datums and controls that reflect how each feature is actually located and used.</li>
-      <li>Applied fits deliberately at the moving interfaces, and left non-critical features open so the part stays cheap to make.</li>
-    </ul>
+<h4>What I did</h4>
+<ul>
+<li>Modeled each part individually from the supplied drawings — cylinder, piston, crankshaft, flywheel, and the supporting hardware — rather than modeling the assembly top-down.</li>
+<li>Constrained the parts into an assembly that moves the way the mechanism should, so interference and travel could be checked rather than assumed.</li>
+<li>Produced detail drawings with GD&amp;T, choosing datums and controls that reflect how each feature is actually located and used.</li>
+<li>Applied fits deliberately at the moving interfaces, and left non-critical features open so the part stays cheap to make.</li>
+</ul>
 
-    <div class="shot shot-row">
-      <figure class="shot" style="margin:0">
-        <!-- Replace with: <img src="assets/air-engine-drawing.png" alt="Detail drawing with GD&T"> -->
-        <div class="ph">Add <code>assets/air-engine-drawing.png</code><br>— a detail drawing with GD&amp;T</div>
-      </figure>
-      <figure class="shot" style="margin:0">
-        <!-- Replace with: <img src="assets/air-engine-exploded.png" alt="Exploded view"> -->
-        <div class="ph">Add <code>assets/air-engine-exploded.png</code><br>— exploded view</div>
-      </figure>
-    </div>
+<div class="shot shot-row">
+<figure class="shot" style="margin:0">
+<!-- Replace with: <img src="assets/air-engine-drawing.png" alt="Detail drawing with GD&T"> -->
+<div class="ph">Add <code>assets/air-engine-drawing.png</code><br>— a detail drawing with GD&amp;T</div>
+</figure>
+<figure class="shot" style="margin:0">
+<!-- Replace with: <img src="assets/air-engine-exploded.png" alt="Exploded view"> -->
+<div class="ph">Add <code>assets/air-engine-exploded.png</code><br>— exploded view</div>
+</figure>
+</div>
 
-    <h4>What I took from it</h4>
-    <p>Modeling to print is a different discipline from modeling to an idea. The drawing is a contract, and the parts only go together if you honor the parts of it that matter.</p>
-  </article>
+<h4>What I took from it</h4>
+<p>Modeling to print is a different discipline from modeling to an idea. The drawing is a contract, and the parts only go together if you honor the parts of it that matter.</p>
+</article>
 
-  <!-- ===================== PACK-MATE ===================== -->
-  <article class="detail" id="pack-mate">
-    <h2>Pack-Mate — Toiletries Case</h2>
-    <p class="meta">Team project · PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
+<!-- ===================== PACK-MATE ===================== -->
+<article class="detail" id="pack-mate">
+<h2>Pack-Mate — Toiletries Case</h2>
+<p class="meta">Team project · PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
 
-    <p>A hard-sided toiletries case that packs flat and unfolds into a counter display, so the contents are laid out and reachable instead of dumped in a bag. The design problem isn't the box — it's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
+<p>A hard-sided toiletries case that packs flat and unfolds into a counter display, so the contents are laid out and reachable instead of dumped in a bag. The design problem isn't the box — it's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
 
-    <figure class="shot">
-      <img src="pack-mate.jpg" alt="Pack-Mate toiletries case, packed and unfolded">
-      <figcaption>Pack-Mate, packed and opened out into its counter layout.</figcaption>
-    </figure>
+<figure class="shot">
+<img src="pack-mate.jpg" alt="Pack-Mate toiletries case, packed and unfolded">
+<figcaption>Pack-Mate, packed and opened out into its counter layout.</figcaption>
+</figure>
 
-    <h4>What I did</h4>
-    <ul>
-      <li>Designed the lid-to-body interface around a deliberate tolerance stack instead of a nominal gap, so the seal survives the range of parts that would actually come out of a mold.</li>
-      <li>Selected clearance and interference fits at the sealing surfaces, trading closing force against sealing reliability.</li>
-      <li>Kept the geometry moldable throughout — draft, uniform wall thickness, and no features that would need side action for no reason.</li>
-      <li>Documented the critical dimensions on the drawing so the fit is inspectable, not just intended.</li>
-    </ul>
+<h4>What I did</h4>
+<ul>
+<li>Designed the lid-to-body interface around a deliberate tolerance stack instead of a nominal gap, so the seal survives the range of parts that would actually come out of a mold.</li>
+<li>Selected clearance and interference fits at the sealing surfaces, trading closing force against sealing reliability.</li>
+<li>Kept the geometry moldable throughout — draft, uniform wall thickness, and no features that would need side action for no reason.</li>
+<li>Documented the critical dimensions on the drawing so the fit is inspectable, not just intended.</li>
+</ul>
 
-    <h4>What I'd change</h4>
-    <p>The next version gets a gasket groove rather than relying on the plastic-to-plastic interface alone — it decouples the seal from the molded tolerance and makes the closing force a design choice instead of a consequence.</p>
-  </article>
+<h4>What I'd change</h4>
+<p>The next version gets a gasket groove rather than relying on the plastic-to-plastic interface alone — it decouples the seal from the molded tolerance and makes the closing force a design choice instead of a consequence.</p>
+</article>
 
-  <!-- ===================== RADAR ===================== -->
-  <article class="detail" id="ultrasonic">
-    <h2>Arduino Radar</h2>
-    <p class="meta">Arduino C/C++ &middot; HC-SR04, SG90 servo, Processing &middot; Built and debugged, August 2026</p>
+<!-- ===================== INJECTION-MOLDED PART REDESIGN ===================== -->
+<article class="detail" id="injection-molded-part-redesign">
+<h2>Injection-Molded Part Redesign</h2>
+<p class="meta">SolidWorks &middot; SOLIDWORKS Plastics &middot; Draft Analysis, DFMXpress &middot; DFM &middot; Sept&ndash;Oct 2026</p>
 
-    <p>An HC-SR04 ultrasonic sensor rides on a servo horn, sweeping 15&deg; to 165&deg; and taking a distance reading at every degree. The Arduino streams each angle/distance pair over USB and a Processing sketch draws a live radar display, objects inside 40&nbsp;cm appearing as red returns at their true bearing.</p>
+<p>Reverse-engineered a molded consumer product housing from physical teardown and caliper measurement, then ran it through design-for-manufacturing analysis and redesigned it to DFM standards.</p>
 
-    <figure class="shot">
-      <img src="assets/arduino-radar-rig.jpg" alt="The radar rig: Arduino, breadboard, servo and the ultrasonic sensor in its wooden bracket">
-      <figcaption>The finished rig. The breadboard carries nothing but 5&nbsp;V and ground &mdash; every signal line runs straight from device to pin.</figcaption>
-    </figure>
+<figure class="shot">
+<img src="assets/controller-shell-v1.jpg" alt="Reverse-engineered baseline housing model, isometric CAD view">
+<figcaption>Baseline housing, reconstructed in SolidWorks from physical teardown and caliper measurements &mdash; surface-lofted contours, shelled thin walls, draft applied to a non-planar parting line.</figcaption>
+</figure>
 
-    <figure class="shot">
-      <img src="assets/arduino-radar-top.jpg" alt="Top-down view of the finished radar rig" loading="lazy">
-      <figcaption>The same rig from above.</figcaption>
-    </figure>
+<h4>What I did</h4>
+<ul>
+<li>Rebuilt the housing as a validated SolidWorks model from physical teardown and caliper measurement, matching its surface-lofted contours, shelled thin walls, and draft on a non-planar parting line.</li>
+<li>Ran design-for-manufacturing analysis with Draft Analysis, DFMXpress, and a SOLIDWORKS Plastics Fill+Pack study, correlating predicted defects (sink marks, weld lines, and an isolated-cavities fill failure traced to non-uniform wall thickness at boss-to-wall junctions) back to defects observed on the physical part.</li>
+<li>Redesigned the housing to DFM standards: targeted uniform wall thickness, corrected rib and boss ratios, and worked to eliminate undercuts at the junctions the simulation flagged.</li>
+<li>Verified the redesign against the same Fill+Pack study rather than relying on inspection alone, and documented which fixes resolved the flagged regions and which didn't, to scope the fully dimensioned GD&amp;T drawing package.</li>
+</ul>
 
-    <h4>How it works</h4>
-    <ul>
-      <li>TRIG on D10, ECHO on D11, servo signal on D12. The breadboard exists only to split the Arduino's single 5&nbsp;V pin between two devices.</li>
-      <li>A 10&nbsp;µs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code> &mdash; halved because the pulse makes a round trip.</li>
-      <li><code>pulseIn()</code> carries a 25&nbsp;ms timeout and returns a sentinel of 200&nbsp;cm on a miss, so a silent sweep can't stall the whole loop.</li>
-      <li>Readings go out as <code>angle,distance.</code> packets at 9600 baud &mdash; comma between the numbers, period to close the packet.</li>
-    </ul>
+<div class="shot shot-row">
+<figure class="shot" style="margin:0">
+<img src="assets/controller-shell-v2.jpg" alt="Redesigned housing with corrected rib/boss geometry, isometric CAD view">
+</figure>
+</div>
+<p class="meta" style="margin-top:-8px">Redesigned housing, with corrected rib and boss geometry at the previously flagged junctions.</p>
 
-    <p>The Processing display departs from the usual tutorial version in three ways: it auto-detects the serial port and lists what it found rather than hardcoding a COM number; it builds its font at runtime with <code>createFont()</code>, removing a manual step that silently breaks the sketch when skipped; and it draws to a virtual 1920&times;1080 canvas scaled to the real display, so it renders correctly on any monitor.</p>
+<h4>What I took from it</h4>
+<p>DFM has to be checked against physics, not just geometry &mdash; a part can look uniform at a glance while local wall thickness pinches down at a boss or rib junction in a way only a mold-flow simulation catches. It also showed the limits of parameter-level fixes: when a local fillet and a global thickness change both fail at the same spots, that's a signal the geometry itself needs to be redesigned, not just re-dimensioned.</p>
+</article>
 
-    <h4>It didn't work the first time</h4>
-    <p>Every distance came back as 200 &mdash; the no-echo sentinel &mdash; while the angle counter advanced normally and the display cheerfully reported "Out of Range" at every bearing.</p>
+<!-- ===================== RADAR ===================== -->
+<article class="detail" id="ultrasonic">
+<h2>Arduino Radar</h2>
+<p class="meta">Arduino C/C++ &middot; HC-SR04, SG90 servo, Processing &middot; Built and debugged, August 2026</p>
 
-    <p>I wrote a diagnostic sketch that fired the sensor twice per cycle, once with TRIG and ECHO as wired and once with the pins swapped, printing raw <code>pulseIn()</code> durations for both:</p>
+<p>An HC-SR04 ultrasonic sensor rides on a servo horn, sweeping 15&deg; to 165&deg; and taking a distance reading at every degree. The Arduino streams each angle/distance pair over USB and a Processing sketch draws a live radar display, objects inside 40&nbsp;cm appearing as red returns at their true bearing.</p>
 
-    <pre class="code">TRIG=10 ECHO=11 -&gt; 0 us = 0.00 cm
+<figure class="shot">
+<img src="assets/arduino-radar-rig.jpg" alt="The radar rig: Arduino, breadboard, servo and the ultrasonic sensor in its wooden bracket">
+<figcaption>The finished rig. The breadboard carries nothing but 5&nbsp;V and ground &mdash; every signal line runs straight from device to pin.</figcaption>
+</figure>
+
+<figure class="shot">
+<img src="assets/arduino-radar-top.jpg" alt="Top-down view of the finished radar rig" loading="lazy">
+<figcaption>The same rig from above.</figcaption>
+</figure>
+
+<h4>How it works</h4>
+<ul>
+<li>TRIG on D10, ECHO on D11, servo signal on D12. The breadboard exists only to split the Arduino's single 5&nbsp;V pin between two devices.</li>
+<li>A 10&nbsp;µs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code> &mdash; halved because the pulse makes a round trip.</li>
+<li><code>pulseIn()</code> carries a 25&nbsp;ms timeout and returns a sentinel of 200&nbsp;cm on a miss, so a silent sweep can't stall the whole loop.</li>
+<li>Readings go out as <code>angle,distance.</code> packets at 9600 baud &mdash; comma between the numbers, period to close the packet.</li>
+</ul>
+
+<p>The Processing display departs from the usual tutorial version in three ways: it auto-detects the serial port and lists what it found rather than hardcoding a COM number; it builds its font at runtime with <code>createFont()</code>, removing a manual step that silently breaks the sketch when skipped; and it draws to a virtual 1920&times;1080 canvas scaled to the real display, so it renders correctly on any monitor.</p>
+
+<h4>It didn't work the first time</h4>
+<p>Every distance came back as 200 &mdash; the no-echo sentinel &mdash; while the angle counter advanced normally and the display cheerfully reported "Out of Range" at every bearing.</p>
+
+<p>I wrote a diagnostic sketch that fired the sensor twice per cycle, once with TRIG and ECHO as wired and once with the pins swapped, printing raw <code>pulseIn()</code> durations for both:</p>
+
+<pre class="code">TRIG=10 ECHO=11 -&gt; 0 us = 0.00 cm
 TRIG=11 ECHO=10 -&gt; 0 us = 0.00 cm</pre>
 
-    <p>Zero on both orderings ruled out a swapped wire and pointed at power rather than signal. I then stripped the circuit to four wires running straight from sensor to Arduino &mdash; no breadboard, no servo &mdash; which eliminated every intermediate connection in one step:</p>
+<p>Zero on both orderings ruled out a swapped wire and pointed at power rather than signal. I then stripped the circuit to four wires running straight from sensor to Arduino &mdash; no breadboard, no servo &mdash; which eliminated every intermediate connection in one step:</p>
 
-    <pre class="code">echo = 1242 us -&gt; 21.11 cm
+<pre class="code">echo = 1242 us -&gt; 21.11 cm
 echo = 1457 us -&gt; 24.77 cm
 echo = 1759 us -&gt; 29.90 cm</pre>
 
-    <blockquote class="pull">The sensor was fine. The 5&nbsp;V feed entered the breadboard's power rail on the left half of the board and ground entered on the right &mdash; and those rails are electrically split at the midpoint. No component could ever have power and ground at the same time.</blockquote>
+<blockquote class="pull">The sensor was fine. The 5&nbsp;V feed entered the breadboard's power rail on the left half of the board and ground entered on the right &mdash; and those rails are electrically split at the midpoint. No component could ever have power and ground at the same time.</blockquote>
 
-    <p>Reviewing a photograph of the original circuit turned up three more faults I hadn't seen looking straight at the board: two signal wires joined mid-air instead of seated in pins, one wire resting on the board without being in a hole, and wire-to-wire joints made across rows that are electrically isolated from each other.</p>
+<p>Reviewing a photograph of the original circuit turned up three more faults I hadn't seen looking straight at the board: two signal wires joined mid-air instead of seated in pins, one wire resting on the board without being in a hole, and wire-to-wire joints made across rows that are electrically isolated from each other.</p>
 
-    <div class="shot shot-row">
-      <figure class="shot" style="margin:0">
-        <img src="assets/arduino-radar-bench.jpg" alt="Early bench setup of the radar during debugging" loading="lazy">
-        <figcaption>An early bench setup while debugging.</figcaption>
-      </figure>
-      <figure class="shot" style="margin:0">
-        <img src="assets/arduino-radar-wiring.jpg" alt="Breadboard wiring from an earlier build of the radar" loading="lazy">
-        <figcaption>The wiring before the rebuild.</figcaption>
-      </figure>
-    </div>
+<div class="shot shot-row">
+<figure class="shot" style="margin:0">
+<img src="assets/arduino-radar-bench.jpg" alt="Early bench setup of the radar during debugging" loading="lazy">
+<figcaption>An early bench setup while debugging.</figcaption>
+</figure>
+<figure class="shot" style="margin:0">
+<img src="assets/arduino-radar-wiring.jpg" alt="Breadboard wiring from an earlier build of the radar" loading="lazy">
+<figcaption>The wiring before the rebuild.</figcaption>
+</figure>
+</div>
 
-    <h4>What I'd tell someone building this</h4>
-    <ul>
-      <li><strong>Isolate before you iterate.</strong> I spent several rounds adjusting a circuit with multiple unknowns in it. Cutting back to four direct wires answered the question immediately.</li>
-      <li><strong>Know what a test actually proves.</strong> Sequential angles in the serial stream look like evidence the servo is turning. They aren't &mdash; those numbers come from the loop counter and print whether or not a servo is even attached.</li>
-      <li><strong>Put timeouts on blocking calls.</strong> Without one, <code>pulseIn()</code> stalls the entire sweep on a missed echo instead of failing visibly.</li>
-      <li><strong>Breadboard rails are not continuous.</strong> The split at the midpoint is the quietest wiring fault on a full-size board.</li>
-    </ul>
+<h4>What I'd tell someone building this</h4>
+<ul>
+<li><strong>Isolate before you iterate.</strong> I spent several rounds adjusting a circuit with multiple unknowns in it. Cutting back to four direct wires answered the question immediately.</li>
+<li><strong>Know what a test actually proves.</strong> Sequential angles in the serial stream look like evidence the servo is turning. They aren't &mdash; those numbers come from the loop counter and print whether or not a servo is even attached.</li>
+<li><strong>Put timeouts on blocking calls.</strong> Without one, <code>pulseIn()</code> stalls the entire sweep on a missed echo instead of failing visibly.</li>
+<li><strong>Breadboard rails are not continuous.</strong> The split at the midpoint is the quietest wiring fault on a full-size board.</li>
+</ul>
 
-    <h4>Finished state</h4>
-    <p>The sketch compiles to 4,326 bytes of flash (13%) and 229 bytes of SRAM (11%). The sweep runs continuously, the serial stream carries valid distances at every angle, and objects placed within 40&nbsp;cm are drawn at the correct bearing.</p>
-  </article>
+<h4>Finished state</h4>
+<p>The sketch compiles to 4,326 bytes of flash (13%) and 229 bytes of SRAM (11%). The sweep runs continuously, the serial stream carries valid distances at every angle, and objects placed within 40&nbsp;cm are drawn at the correct bearing.</p>
+</article>
 
-  <!-- ===================== RESEARCH ===================== -->
-  <article class="detail" id="hemp-hurd">
-    <h2>Extracting Nanocellulose from Hemp Hurd</h2>
-    <p class="meta">UNC Charlotte · Undergraduate research, Department of Mechanical Engineering</p>
+<!-- ===================== RESEARCH ===================== -->
+<article class="detail" id="hemp-hurd">
+<h2>Extracting Nanocellulose from Hemp Hurd</h2>
+<p class="meta">UNC Charlotte · Undergraduate research, Department of Mechanical Engineering</p>
 
-    <p>Hemp hurd is the woody core left behind when hemp is processed for fiber: a high-volume agricultural byproduct with very little to do. Cellulose has been pulled out of it before, and whole ground hurd has been used to reinforce composites — but not as extracted microfiber in injection-molded plastics. That gap is the project.</p>
+<p>Hemp hurd is the woody core left behind when hemp is processed for fiber: a high-volume agricultural byproduct with very little to do. Cellulose has been pulled out of it before, and whole ground hurd has been used to reinforce composites — but not as extracted microfiber in injection-molded plastics. That gap is the project.</p>
 
-    <p>Hurd is sold ground to several particle sizes, which raises the practical question we set out to answer: <strong>which grind is actually worth starting from?</strong> We ran four — sieve unders, Mill 30, Mill 60, and Mill 99 — through the same extraction and compared what came back.</p>
+<p>Hurd is sold ground to several particle sizes, which raises the practical question we set out to answer: <strong>which grind is actually worth starting from?</strong> We ran four — sieve unders, Mill 30, Mill 60, and Mill 99 — through the same extraction and compared what came back.</p>
 
-    <table class="data">
-      <caption>The four grinds, as bought and as measured</caption>
-      <thead>
-        <tr><th>Variety</th><th>Nominal size</th><th>Measured median<span class="note">optical microscopy, ImageJ</span></th><th>Fiber yield<span class="note">per 10&nbsp;g raw</span></th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Sieve unders</td><td>&gt; 1410&nbsp;µm</td><td>748&nbsp;µm</td><td><strong>~3.5&nbsp;g</strong></td></tr>
-        <tr><td>Mill 30</td><td>1231&nbsp;µm</td><td>1230&nbsp;µm</td><td>~3.4&nbsp;g</td></tr>
-        <tr><td>Mill 60</td><td>1003&nbsp;µm</td><td>1003&nbsp;µm</td><td>~3.8&nbsp;g</td></tr>
-        <tr><td>Mill 99</td><td>227&nbsp;µm</td><td>227&nbsp;µm</td><td>~1.5&nbsp;g</td></tr>
-      </tbody>
-    </table>
-    <p class="fignote">Sieve unders measure well below their nominal grade — the coarsest, least-sieved variety has the widest spread of particle shapes and sizes, which pulls the median down.</p>
+<table class="data">
+<caption>The four grinds, as bought and as measured</caption>
+<thead>
+<tr><th>Variety</th><th>Nominal size</th><th>Measured median<span class="note">optical microscopy, ImageJ</span></th><th>Fiber yield<span class="note">per 10&nbsp;g raw</span></th></tr>
+</thead>
+<tbody>
+<tr><td>Sieve unders</td><td>&gt; 1410&nbsp;µm</td><td>748&nbsp;µm</td><td><strong>~3.5&nbsp;g</strong></td></tr>
+<tr><td>Mill 30</td><td>1231&nbsp;µm</td><td>1230&nbsp;µm</td><td>~3.4&nbsp;g</td></tr>
+<tr><td>Mill 60</td><td>1003&nbsp;µm</td><td>1003&nbsp;µm</td><td>~3.8&nbsp;g</td></tr>
+<tr><td>Mill 99</td><td>227&nbsp;µm</td><td>227&nbsp;µm</td><td>~1.5&nbsp;g</td></tr>
+</tbody>
+</table>
+<p class="fignote">Sieve unders measure well below their nominal grade — the coarsest, least-sieved variety has the widest spread of particle shapes and sizes, which pulls the median down.</p>
 
-    <h4>Extraction</h4>
-    <p>10&nbsp;g of each grind went through an identical procedure, so any difference in the output traces back to the feedstock rather than the process:</p>
-    <ul>
-      <li>A two-hour sodium hydroxide wash at 70&nbsp;°C</li>
-      <li>Two one-hour bleaching treatments in sodium chlorite</li>
-      <li>A 30-minute room-temperature sodium hydroxide wash</li>
-      <li>Oven drying at 105&nbsp;°C, then grinding</li>
-    </ul>
+<h4>Extraction</h4>
+<p>10&nbsp;g of each grind went through an identical procedure, so any difference in the output traces back to the feedstock rather than the process:</p>
+<ul>
+<li>A two-hour sodium hydroxide wash at 70&nbsp;°C</li>
+<li>Two one-hour bleaching treatments in sodium chlorite</li>
+<li>A 30-minute room-temperature sodium hydroxide wash</li>
+<li>Oven drying at 105&nbsp;°C, then grinding</li>
+</ul>
 
-    <h4>Characterization</h4>
-    <p>Purity and thermal stability were assessed by TGA and DTG; particle size was measured by optical microscopy. Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose — meaning the extraction worked on every grind, and the decision came down to yield and purity instead.</p>
+<h4>Characterization</h4>
+<p>Purity and thermal stability were assessed by TGA and DTG; particle size was measured by optical microscopy. Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose — meaning the extraction worked on every grind, and the decision came down to yield and purity instead.</p>
 
-    <blockquote class="pull">Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose. The extraction works on every grind — so the choice comes down to yield and cost, not chemistry.</blockquote>
+<blockquote class="pull">Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose. The extraction works on every grind &mdash; so the choice comes down to yield and cost, not chemistry.</blockquote>
 
-    <h4>What we found</h4>
-    <ul>
-      <li>Cellulose microfibers <strong>can</strong> be extracted from hemp hurd.</li>
-      <li>Mill 99 gave the highest-purity fibers but was significantly harder to process.</li>
-      <li>Sieve unders — the cheapest, coarsest grind — produced fibers of comparable purity to Mill 99 at more than double the yield: 10&nbsp;g of sieve unders returned about 3.5&nbsp;g of fibers, against roughly 1.5&nbsp;g from Mill 99.</li>
-      <li>Weighing affordability, yield, and purity, <strong>sieve unders</strong> won. The expensive input wasn't buying anything.</li>
-    </ul>
+<h4>What we found</h4>
+<ul>
+<li>Cellulose microfibers <strong>can</strong> be extracted from hemp hurd.</li>
+<li>Mill 99 gave the highest-purity fibers but was significantly harder to process.</li>
+<li>Sieve unders — the cheapest, coarsest grind — produced fibers of comparable purity to Mill 99 at more than double the yield: 10&nbsp;g of sieve unders returned about 3.5&nbsp;g of fibers, against roughly 1.5&nbsp;g from Mill 99.</li>
+<li>Weighing affordability, yield, and purity, <strong>sieve unders</strong> won. The expensive input wasn't buying anything.</li>
+</ul>
 
-    <h4>Next steps</h4>
-    <p>Production from sieve unders has been scaled up to make enough fiber for six formulations of fiber and resin. Stress testing those biocomposite samples is what will confirm whether hurd-derived microfibers are actually viable as reinforcement.</p>
+<h4>Next steps</h4>
+<p>Production from sieve unders has been scaled up to make enough fiber for six formulations of fiber and resin. Stress testing those biocomposite samples is what will confirm whether hurd-derived microfibers are actually viable as reinforcement.</p>
 
-    <p style="font-size:13.5px; color:var(--muted); margin-top:10px">Poster: Liam Eckhart, Shamar Lindo, Ali Alkhabbaz, Md Shah Nawaz Arafan, and Roger Tipton (PI), Department of Mechanical Engineering, UNC Charlotte. Supported by the Office of Undergraduate Research.</p>
-  </article>
+<p style="font-size:13.5px; color:var(--muted); margin-top:10px">Poster: Liam Eckhart, Shamar Lindo, Ali Alkhabbaz, Md Shah Nawaz Arafan, and Roger Tipton (PI), Department of Mechanical Engineering, UNC Charlotte. Supported by the Office of Undergraduate Research.</p>
+</article>
 
-  <p style="margin-top:36px"><a class="inline-link" href="index.html">← Back home</a></p>
+<p style="margin-top:36px"><a class="inline-link" href="index.html">← Back home</a></p>
 
 </main>
 
 <footer>
-  <span>© <span class="yr">2026</span> Shamar Lindo</span>
-  <span class="spacer"><a href="index.html">Home</a></span>
-  <a href="mailto:shamardlindo@gmail.com">Email</a>
-  <a href="https://github.com/shamardlindo1">GitHub</a>
+<span>© <span class="yr">2026</span> Shamar Lindo</span>
+<span class="spacer"><a href="index.html">Home</a></span>
+<a href="mailto:shamardlindo@gmail.com">Email</a>
+<a href="https://github.com/shamardlindo1">GitHub</a>
 </footer>
 
 <script>
-  document.querySelectorAll('.yr').forEach(function (el) { el.textContent = new Date().getFullYear(); });
-  document.querySelectorAll('.shot img').forEach(function (img) {
-    img.addEventListener('error', function () {
-      var d = document.createElement('div');
-      d.className = 'ph';
-      d.textContent = 'Image coming soon';
-      img.replaceWith(d);
-    });
-  });
+document.querySelectorAll('.yr').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+document.querySelectorAll('.shot img').forEach(function (img) {
+img.addEventListener('error', function () {
+var d = document.createElement('div');
+d.className = 'ph';
+d.textContent = 'Image coming soon';
+img.replaceWith(d);
+});
+});
 
 </script>
 
