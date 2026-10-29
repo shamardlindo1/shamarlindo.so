@@ -119,6 +119,17 @@
 </figure>
 </div>
 <p class="meta" style="margin-top:-8px">Redesigned housing, with corrected rib and boss geometry at the previously flagged junctions.</p>
+<div class="shot shot-row">
+<figure class="shot" style="margin:0">
+<img src="assets/controller-shell-v1-fill-results.jpg" alt="SOLIDWORKS Plastics Fill Time result, baseline housing">
+<figcaption>Baseline (V1) Fill Time result &mdash; flags the isolated-cavities fill failure at the boss-to-wall junctions.</figcaption>
+</figure>
+<figure class="shot" style="margin:0">
+<img src="assets/controller-shell-v2-fill-results.jpg" alt="SOLIDWORKS Plastics Fill Time result, redesigned housing">
+<figcaption>Redesigned (V2) Fill Time result &mdash; same study, after the DFM fixes.</figcaption>
+</figure>
+</div>
+
 
 <h4>What I took from it</h4>
 <p>DFM has to be checked against physics, not just geometry &mdash; a part can look uniform at a glance while local wall thickness pinches down at a boss or rib junction in a way only a mold-flow simulation catches. It also showed the limits of parameter-level fixes: when a local fillet and a global thickness change both fail at the same spots, that's a signal the geometry itself needs to be redesigned, not just re-dimensioned.</p>
