@@ -1,15 +1,15 @@
 /* shamarlindo.so - simple styles */
 
 :root {
-  --bg: #eef2f8;
-  --card: #ffffff;
-  --fg: #1a2233;
-  --muted: #5b6577;
-  --rule: #dde3ee;
-  --accent: #2557d6;
-  --accent-soft: #e8efff;
-  --nav: #14213d;
-  --ph-bg: #f3f5fa;
+  --bg: #2b2c30;
+  --card: #f5f5f6;
+  --fg: #17171a;
+  --muted: #66666c;
+  --rule: #d6d6d9;
+  --accent: #1c1c1f;
+  --accent-soft: #e4e4e7;
+  --nav: #0b0b0c;
+  --ph-bg: #ebebed;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -38,9 +38,9 @@ nav .inner {
   align-items: baseline;
 }
 nav .me { font-weight: bold; font-size: 18px; margin-right: auto; color: #ffffff; text-decoration: none; }
-nav a.link { font-size: 15px; color: #c5d0e6; text-decoration: none; padding-bottom: 2px; border-bottom: 2px solid transparent; }
-nav a.link:hover { color: #ffffff; border-bottom-color: #6f9bff; }
-nav a.link[aria-current="page"] { color: #ffffff; border-bottom-color: #6f9bff; }
+nav a.link { font-size: 15px; color: #b4b4ba; text-decoration: none; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+nav a.link:hover { color: #ffffff; border-bottom-color: #8a8a92; }
+nav a.link[aria-current="page"] { color: #ffffff; border-bottom-color: #8a8a92; }
 
 /* layout: white card on a light background */
 main {
@@ -49,7 +49,7 @@ main {
   padding: 0 36px 40px;
   background: var(--card);
   border-radius: 14px;
-  box-shadow: 0 2px 14px rgba(20, 33, 61, 0.08);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
 }
 section { padding: 28px 0; border-top: 1px solid var(--rule); scroll-margin-top: 70px; }
 section:first-of-type { border-top: 0; }
@@ -74,11 +74,11 @@ header.hero p { margin: 0 0 12px; }
   margin-top: 6px;
   padding: 6px 14px;
   font-size: 15px;
-  color: #17603a;
-  background: #e3f6ea;
+  color: #2e2e33;
+  background: #e0e0e3;
   border-radius: 8px;
 }
-.status .dot { width: 8px; height: 8px; border-radius: 50%; background: #1fa65a; }
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: #2e2e33; }
 
 header.page { padding: 36px 0 16px; }
 header.page h1 { font-size: 36px; margin: 0 0 8px; }
@@ -112,7 +112,7 @@ p:last-child { margin-bottom: 0; }
   color: #ffffff;
   border-radius: 8px;
 }
-.inline-link[href$=".pdf"]:hover { background: #1b45b0; text-decoration: none; }
+.inline-link[href$=".pdf"]:hover { background: #44444a; text-decoration: none; }
 
 /* entries */
 .entry {
@@ -123,11 +123,11 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 12px;
   border: 1px solid var(--rule);
   border-radius: 10px;
-  background: #fbfcfe;
+  background: #ffffff;
 }
 .entry:last-child { margin-bottom: 0; }
 a.entry { transition: box-shadow .15s ease, border-color .15s ease; }
-a.entry:hover { border-color: var(--accent); box-shadow: 0 3px 12px rgba(37, 87, 214, 0.14); }
+a.entry:hover { border-color: var(--accent); box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18); }
 a.entry h3 { color: var(--accent); }
 .entry .top { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-bottom: 4px; }
 .entry h3 { font-size: 19px; margin: 0; }
@@ -179,13 +179,13 @@ footer {
   margin: 0 auto;
   padding: 8px 24px 36px;
   font-size: 14px;
-  color: var(--muted);
+  color: #a9a9b0;
   display: flex;
   flex-wrap: wrap;
   gap: 6px 16px;
 }
-footer a { color: var(--muted); }
-footer a:hover { color: var(--accent); }
+footer a { color: #a9a9b0; }
+footer a:hover { color: #ffffff; }
 footer .spacer { margin-left: auto; }
 
 /* 404 */
