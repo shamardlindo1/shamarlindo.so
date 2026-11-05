@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — Shamar Lindo</title>
-<meta name="description" content="Project write-ups — mechanical design in PTC Creo, embedded electronics, and materials research.">
-<meta property="og:title" content="Projects — Shamar Lindo">
+<title>Projects | Shamar Lindo</title>
+<meta name="description" content="Project write-ups: mechanical design in PTC Creo, embedded electronics, and materials research.">
+<meta property="og:title" content="Projects | Shamar Lindo">
 <meta property="og:description" content="Mechanical design in PTC Creo, embedded electronics, and materials research.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
@@ -27,17 +27,17 @@
 
 <header class="page">
 <h1>Projects</h1>
-<p>Longer write-ups of the design and build work — what the problem was, what I actually did, and what I'd change.</p>
+<p>Longer write-ups of the design and build work: what the problem was, what I actually did, and what I'd change.</p>
 </header>
 
 
 
 <!-- ===================== PACK-MATE ===================== -->
 <article class="detail" id="pack-mate">
-<h2>Pack-Mate — Toiletries Case</h2>
+<h2>Pack-Mate: Toiletries Case</h2>
 <p class="meta">Team project · PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
 
-<p>A hard-sided toiletries case that packs flat and unfolds into a counter display, so the contents are laid out and reachable instead of dumped in a bag. The design problem isn't the box — it's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
+<p>A hard-sided toiletries case that packs flat and unfolds into a counter display, so the contents are laid out and reachable instead of dumped in a bag. The design problem isn't the box. It's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
 
 <figure class="shot">
 <img src="pack-mate.jpg" alt="Pack-Mate toiletries case, packed and unfolded">
@@ -51,20 +51,20 @@
 
 <h4>Files</h4>
 <ul>
-<li><a href="assets/pocket-vault-user-manual.pdf" target="_blank" rel="noopener">User manual (PDF)</a> &mdash; written for the course as &ldquo;The Pocket Vault&rdquo; by CadVenture: assembly, setup, maintenance, safety, and warranty.</li>
-<li><a href="assets/pocket-vault-cad.zip" download>CAD files (ZIP)</a> &mdash; the Creo assembly and both shell parts.</li>
+<li><a href="assets/pocket-vault-user-manual.pdf" target="_blank" rel="noopener">User manual (PDF)</a>: written for the course as &ldquo;The Pocket Vault&rdquo; by CadVenture: assembly, setup, maintenance, safety, and warranty.</li>
+<li><a href="assets/pocket-vault-cad.zip" download>CAD files (ZIP)</a>: the Creo assembly and both shell parts.</li>
 </ul>
 
 <h4>What I did</h4>
 <ul>
 <li>Designed the lid-to-body interface around a deliberate tolerance stack instead of a nominal gap, so the seal survives the range of parts that would actually come out of a mold.</li>
 <li>Selected clearance and interference fits at the sealing surfaces, trading closing force against sealing reliability.</li>
-<li>Kept the geometry moldable throughout — draft, uniform wall thickness, and no features that would need side action for no reason.</li>
+<li>Kept the geometry moldable throughout: draft, uniform wall thickness, and no features that would need side action for no reason.</li>
 <li>Documented the critical dimensions on the drawing so the fit is inspectable, not just intended.</li>
 </ul>
 
 <h4>What I'd change</h4>
-<p>The next version gets a gasket groove rather than relying on the plastic-to-plastic interface alone — it decouples the seal from the molded tolerance and makes the closing force a design choice instead of a consequence.</p>
+<p>The next version gets a gasket groove rather than relying on the plastic-to-plastic interface alone. It decouples the seal from the molded tolerance and makes the closing force a design choice instead of a consequence.</p>
 </article>
 
 <!-- ===================== INJECTION-MOLDED PART REDESIGN ===================== -->
@@ -76,7 +76,7 @@
 
 <figure class="shot">
 <img src="assets/controller-shell-v1.jpg" alt="Reverse-engineered baseline housing model, isometric CAD view">
-<figcaption>Baseline housing, reconstructed in SolidWorks from physical teardown and caliper measurements &mdash; surface-lofted contours, shelled thin walls, draft applied to a non-planar parting line.</figcaption>
+<figcaption>Baseline housing, reconstructed in SolidWorks from physical teardown and caliper measurements: surface-lofted contours, shelled thin walls, draft applied to a non-planar parting line.</figcaption>
 </figure>
 
 <h4>What I did</h4>
@@ -96,17 +96,17 @@
 <div class="shot shot-row">
 <figure class="shot" style="margin:0">
 <img src="assets/controller-shell-v1-fill-results.jpg" alt="SOLIDWORKS Plastics Fill Time result, baseline housing">
-<figcaption>Baseline (V1) Fill Time result &mdash; flags the isolated-cavities fill failure at the boss-to-wall junctions.</figcaption>
+<figcaption>Baseline (V1) Fill Time result: flags the isolated-cavities fill failure at the boss-to-wall junctions.</figcaption>
 </figure>
 <figure class="shot" style="margin:0">
 <img src="assets/controller-shell-v2-fill-results.jpg" alt="SOLIDWORKS Plastics Fill Time result, redesigned housing">
-<figcaption>Redesigned (V2) Fill Time result &mdash; same study, after the DFM fixes.</figcaption>
+<figcaption>Redesigned (V2) Fill Time result: same study, after the DFM fixes.</figcaption>
 </figure>
 </div>
 
 
 <h4>What I took from it</h4>
-<p>DFM has to be checked against physics, not just geometry &mdash; a part can look uniform at a glance while local wall thickness pinches down at a boss or rib junction in a way only a mold-flow simulation catches. It also showed the limits of parameter-level fixes: when a local fillet and a global thickness change both fail at the same spots, that's a signal the geometry itself needs to be redesigned, not just re-dimensioned.</p>
+<p>DFM has to be checked against physics, not just geometry: a part can look uniform at a glance while local wall thickness pinches down at a boss or rib junction in a way only a mold-flow simulation catches. It also showed the limits of parameter-level fixes: when a local fillet and a global thickness change both fail at the same spots, that's a signal the geometry itself needs to be redesigned, not just re-dimensioned.</p>
 </article>
 
 <!-- ===================== RADAR ===================== -->
@@ -118,7 +118,7 @@
 
 <figure class="shot">
 <img src="assets/arduino-radar-rig.jpg" alt="The radar rig: Arduino, breadboard, servo and the ultrasonic sensor in its wooden bracket">
-<figcaption>The finished rig. The breadboard carries nothing but 5&nbsp;V and ground &mdash; every signal line runs straight from device to pin.</figcaption>
+<figcaption>The finished rig. The breadboard carries nothing but 5&nbsp;V and ground. Every signal line runs straight from device to pin.</figcaption>
 </figure>
 
 <figure class="shot">
@@ -136,28 +136,28 @@
 <h4>How it works</h4>
 <ul>
 <li>TRIG on D10, ECHO on D11, servo signal on D12. The breadboard exists only to split the Arduino's single 5&nbsp;V pin between two devices.</li>
-<li>A 10&nbsp;µs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code> &mdash; halved because the pulse makes a round trip.</li>
+<li>A 10&nbsp;µs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code>, halved because the pulse makes a round trip.</li>
 <li><code>pulseIn()</code> carries a 25&nbsp;ms timeout and returns a sentinel of 200&nbsp;cm on a miss, so a silent sweep can't stall the whole loop.</li>
-<li>Readings go out as <code>angle,distance.</code> packets at 9600 baud &mdash; comma between the numbers, period to close the packet.</li>
+<li>Readings go out as <code>angle,distance.</code> packets at 9600 baud: comma between the numbers, period to close the packet.</li>
 </ul>
 
 <p>The Processing display departs from the usual tutorial version in three ways: it auto-detects the serial port and lists what it found rather than hardcoding a COM number; it builds its font at runtime with <code>createFont()</code>, removing a manual step that silently breaks the sketch when skipped; and it draws to a virtual 1920&times;1080 canvas scaled to the real display, so it renders correctly on any monitor.</p>
 
 <h4>It didn't work the first time</h4>
-<p>Every distance came back as 200 &mdash; the no-echo sentinel &mdash; while the angle counter advanced normally and the display cheerfully reported "Out of Range" at every bearing.</p>
+<p>Every distance came back as 200, the no-echo sentinel, while the angle counter advanced normally and the display cheerfully reported "Out of Range" at every bearing.</p>
 
 <p>I wrote a diagnostic sketch that fired the sensor twice per cycle, once with TRIG and ECHO as wired and once with the pins swapped, printing raw <code>pulseIn()</code> durations for both:</p>
 
 <pre class="code">TRIG=10 ECHO=11 -&gt; 0 us = 0.00 cm
 TRIG=11 ECHO=10 -&gt; 0 us = 0.00 cm</pre>
 
-<p>Zero on both orderings ruled out a swapped wire and pointed at power rather than signal. I then stripped the circuit to four wires running straight from sensor to Arduino &mdash; no breadboard, no servo &mdash; which eliminated every intermediate connection in one step:</p>
+<p>Zero on both orderings ruled out a swapped wire and pointed at power rather than signal. I then stripped the circuit to four wires running straight from sensor to Arduino, with no breadboard and no servo, which eliminated every intermediate connection in one step:</p>
 
 <pre class="code">echo = 1242 us -&gt; 21.11 cm
 echo = 1457 us -&gt; 24.77 cm
 echo = 1759 us -&gt; 29.90 cm</pre>
 
-<blockquote class="pull">The sensor was fine. The 5&nbsp;V feed entered the breadboard's power rail on the left half of the board and ground entered on the right &mdash; and those rails are electrically split at the midpoint. No component could ever have power and ground at the same time.</blockquote>
+<blockquote class="pull">The sensor was fine. The 5&nbsp;V feed entered the breadboard's power rail on the left half of the board and ground entered on the right, and those rails are electrically split at the midpoint. No component could ever have power and ground at the same time.</blockquote>
 
 <p>Reviewing a photograph of the original circuit turned up three more faults I hadn't seen looking straight at the board: two signal wires joined mid-air instead of seated in pins, one wire resting on the board without being in a hole, and wire-to-wire joints made across rows that are electrically isolated from each other.</p>
 
@@ -175,7 +175,7 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <h4>What I'd tell someone building this</h4>
 <ul>
 <li><strong>Isolate before you iterate.</strong> I spent several rounds adjusting a circuit with multiple unknowns in it. Cutting back to four direct wires answered the question immediately.</li>
-<li><strong>Know what a test actually proves.</strong> Sequential angles in the serial stream look like evidence the servo is turning. They aren't &mdash; those numbers come from the loop counter and print whether or not a servo is even attached.</li>
+<li><strong>Know what a test actually proves.</strong> Sequential angles in the serial stream look like evidence the servo is turning. They aren't. Those numbers come from the loop counter and print whether or not a servo is even attached.</li>
 <li><strong>Put timeouts on blocking calls.</strong> Without one, <code>pulseIn()</code> stalls the entire sweep on a missed echo instead of failing visibly.</li>
 <li><strong>Breadboard rails are not continuous.</strong> The split at the midpoint is the quietest wiring fault on a full-size board.</li>
 </ul>
@@ -186,9 +186,9 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <h2>Extracting Nanocellulose from Hemp Hurd</h2>
 <p class="meta">UNC Charlotte · Undergraduate research, Department of Mechanical Engineering</p>
 
-<p>Hemp hurd is the woody core left behind when hemp is processed for fiber: a high-volume agricultural byproduct with very little to do. Cellulose has been pulled out of it before, and whole ground hurd has been used to reinforce composites — but not as extracted microfiber in injection-molded plastics. That gap is the project.</p>
+<p>Hemp hurd is the woody core left behind when hemp is processed for fiber: a high-volume agricultural byproduct with very little to do. Cellulose has been pulled out of it before, and whole ground hurd has been used to reinforce composites, but not as extracted microfiber in injection-molded plastics. That gap is the project.</p>
 
-<p>Hurd is sold ground to several particle sizes, which raises the practical question we set out to answer: <strong>which grind is actually worth starting from?</strong> We ran four — sieve unders, Mill 30, Mill 60, and Mill 99 — through the same extraction and compared what came back.</p>
+<p>Hurd is sold ground to several particle sizes, which raises the practical question we set out to answer: <strong>which grind is actually worth starting from?</strong> We ran four grinds (sieve unders, Mill 30, Mill 60, and Mill 99) through the same extraction and compared what came back.</p>
 
 <table class="data">
 <caption>The four grinds, as bought and as measured</caption>
@@ -202,7 +202,7 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <tr><td>Mill 99</td><td>227&nbsp;µm</td><td>227&nbsp;µm</td><td>~1.5&nbsp;g</td></tr>
 </tbody>
 </table>
-<p class="fignote">Sieve unders measure well below their nominal grade — the coarsest, least-sieved variety has the widest spread of particle shapes and sizes, which pulls the median down.</p>
+<p class="fignote">Sieve unders measure well below their nominal grade. The coarsest, least-sieved variety has the widest spread of particle shapes and sizes, which pulls the median down.</p>
 
 <h4>Extraction</h4>
 <p>10&nbsp;g of each grind went through an identical procedure, so any difference in the output traces back to the feedstock rather than the process:</p>
@@ -214,15 +214,15 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 </ul>
 
 <h4>Characterization</h4>
-<p>Purity and thermal stability were assessed by TGA and DTG; particle size was measured by optical microscopy. Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose — meaning the extraction worked on every grind, and the decision came down to yield and purity instead.</p>
+<p>Purity and thermal stability were assessed by TGA and DTG; particle size was measured by optical microscopy. Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose, meaning the extraction worked on every grind, and the decision came down to yield and purity instead.</p>
 
-<blockquote class="pull">Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose. The extraction works on every grind &mdash; so the choice comes down to yield and cost, not chemistry.</blockquote>
+<blockquote class="pull">Thermal stability came out closely matched across all four varieties, and close to that of pure cellulose. The extraction works on every grind, so the choice comes down to yield and cost, not chemistry.</blockquote>
 
 <h4>What we found</h4>
 <ul>
 <li>Cellulose microfibers <strong>can</strong> be extracted from hemp hurd.</li>
 <li>Mill 99 gave the highest-purity fibers but was significantly harder to process.</li>
-<li>Sieve unders — the cheapest, coarsest grind — produced fibers of comparable purity to Mill 99 at more than double the yield: 10&nbsp;g of sieve unders returned about 3.5&nbsp;g of fibers, against roughly 1.5&nbsp;g from Mill 99.</li>
+<li>Sieve unders, the cheapest and coarsest grind, produced fibers of comparable purity to Mill 99 at more than double the yield: 10&nbsp;g of sieve unders returned about 3.5&nbsp;g of fibers, against roughly 1.5&nbsp;g from Mill 99.</li>
 <li>Weighing affordability, yield, and purity, <strong>sieve unders</strong> won. The expensive input wasn't buying anything.</li>
 </ul>
 
