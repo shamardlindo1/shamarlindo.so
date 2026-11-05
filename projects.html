@@ -30,7 +30,41 @@
 <p>Longer write-ups of the design and build work — what the problem was, what I actually did, and what I'd change.</p>
 </header>
 
+<!-- ===================== AIR ENGINE ===================== -->
+<article class="detail" id="air-engine">
+<h2>Air Engine Assembly</h2>
+<p class="meta">PTC Creo · Part &amp; assembly modeling, GD&amp;T, technical drawings</p>
 
+<p>A complete pneumatic engine built from a set of technical drawings. Every component was modeled to print, constrained into a working assembly, and then detailed back out into drawings of my own. The engine itself is the excuse; the real exercise is reading intent off a drawing and matching it exactly — where the tolerance is tight because something has to slide, and where it's open because nothing depends on it.</p>
+
+<figure class="shot">
+<!-- Replace this div with: <img src="assets/air-engine-assembly.png" alt="Creo render of the assembled air engine"> -->
+<div class="ph">Add <code>assets/air-engine-assembly.png</code><br>— shaded Creo render of the full assembly</div>
+<figcaption>The complete assembly, shaded in Creo.</figcaption>
+</figure>
+
+<h4>What I did</h4>
+<ul>
+<li>Modeled each part individually from the supplied drawings — cylinder, piston, crankshaft, flywheel, and the supporting hardware — rather than modeling the assembly top-down.</li>
+<li>Constrained the parts into an assembly that moves the way the mechanism should, so interference and travel could be checked rather than assumed.</li>
+<li>Produced detail drawings with GD&amp;T, choosing datums and controls that reflect how each feature is actually located and used.</li>
+<li>Applied fits deliberately at the moving interfaces, and left non-critical features open so the part stays cheap to make.</li>
+</ul>
+
+<div class="shot shot-row">
+<figure class="shot" style="margin:0">
+<!-- Replace with: <img src="assets/air-engine-drawing.png" alt="Detail drawing with GD&T"> -->
+<div class="ph">Add <code>assets/air-engine-drawing.png</code><br>— a detail drawing with GD&amp;T</div>
+</figure>
+<figure class="shot" style="margin:0">
+<!-- Replace with: <img src="assets/air-engine-exploded.png" alt="Exploded view"> -->
+<div class="ph">Add <code>assets/air-engine-exploded.png</code><br>— exploded view</div>
+</figure>
+</div>
+
+<h4>What I took from it</h4>
+<p>Modeling to print is a different discipline from modeling to an idea. The drawing is a contract, and the parts only go together if you honor the parts of it that matter.</p>
+</article>
 
 <!-- ===================== PACK-MATE ===================== -->
 <article class="detail" id="pack-mate">
@@ -43,6 +77,17 @@
 <img src="pack-mate.jpg" alt="Pack-Mate toiletries case, packed and unfolded">
 <figcaption>Pack-Mate, packed and opened out into its counter layout.</figcaption>
 </figure>
+
+<figure class="shot">
+<img src="assets/pocket-vault-animation.gif" alt="Rendered animation of the case's two shells separating" loading="lazy">
+<figcaption>Rendered animation of the two shells coming apart.</figcaption>
+</figure>
+
+<h4>Files</h4>
+<ul>
+<li><a href="assets/pocket-vault-user-manual.pdf" target="_blank" rel="noopener">User manual (PDF)</a> &mdash; written for the course as &ldquo;The Pocket Vault&rdquo; by CadVenture: assembly, setup, maintenance, safety, and warranty.</li>
+<li><a href="assets/pocket-vault-cad.zip" download>CAD files (ZIP)</a> &mdash; the Creo assembly and both shell parts.</li>
+</ul>
 
 <h4>What I did</h4>
 <ul>
@@ -113,6 +158,13 @@
 <figure class="shot">
 <img src="assets/arduino-radar-top.jpg" alt="Top-down view of the finished radar rig" loading="lazy">
 <figcaption>The same rig from above.</figcaption>
+</figure>
+
+<figure class="shot">
+<video controls preload="metadata" playsinline style="width:100%; max-width:360px">
+<source src="assets/arduino-radar-demo.mp4" type="video/mp4">
+</video>
+<figcaption>The radar running: the sensor sweeps and the Processing display plots what it sees.</figcaption>
 </figure>
 
 <h4>How it works</h4>
@@ -227,6 +279,7 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <span class="spacer"><a href="index.html">Home</a></span>
 <a href="mailto:shamardlindo@gmail.com">Email</a>
 <a href="https://github.com/shamardlindo1">GitHub</a>
+<a href="https://webpages.charlotte.edu/ajohn503/Finalproject.html" target="_blank" rel="noopener">Course project site</a>
 </footer>
 
 <script>
