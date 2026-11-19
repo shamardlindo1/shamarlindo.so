@@ -8,7 +8,7 @@
 <meta property="og:title" content="Projects | Shamar Lindo">
 <meta property="og:description" content="Mechanical design in PTC Creo, embedded electronics, and materials research.">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>âï¸</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,7 +35,7 @@
 <!-- ===================== PACK-MATE ===================== -->
 <article class="detail" id="pack-mate">
 <h2>Pack-Mate: Toiletries Case</h2>
-<p class="meta">Team project Â· PTC Creo Â· Tolerance fits, design for manufacturing, sealing</p>
+<p class="meta">Team project · PTC Creo · Tolerance fits, design for manufacturing, sealing</p>
 
 <p>A hard-sided toiletries case that packs flat and unfolds into a counter display, so the contents are laid out and reachable instead of dumped in a bag. The design problem isn't the box. It's the joint. A lid that seals reliably and a lid a person can actually open pull in opposite directions, and the whole case is really an argument about where between those two the fit should land.</p>
 
@@ -147,7 +147,7 @@
 <h4>How it works</h4>
 <ul>
 <li>TRIG on D10, ECHO on D11, servo signal on D12. The breadboard exists only to split the Arduino's single 5&nbsp;V pin between two devices.</li>
-<li>A 10&nbsp;Âµs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code>, halved because the pulse makes a round trip.</li>
+<li>A 10&nbsp;µs trigger pulse per the datasheet, then <code>pulseIn()</code> times the echo; distance is <code>duration &times; 0.034 / 2</code>, halved because the pulse makes a round trip.</li>
 <li><code>pulseIn()</code> carries a 25&nbsp;ms timeout and returns a sentinel of 200&nbsp;cm on a miss, so a silent sweep can't stall the whole loop.</li>
 <li>Readings go out as <code>angle,distance.</code> packets at 9600 baud: comma between the numbers, period to close the packet.</li>
 </ul>
@@ -195,7 +195,7 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <!-- ===================== RESEARCH ===================== -->
 <article class="detail" id="hemp-hurd">
 <h2>Extracting Nanocellulose from Hemp Hurd</h2>
-<p class="meta">UNC Charlotte Â· Undergraduate research, Department of Mechanical Engineering</p>
+<p class="meta">UNC Charlotte · Undergraduate research, Department of Mechanical Engineering</p>
 
 <p>Hemp hurd is the woody core left behind when hemp is processed for fiber: a high-volume agricultural byproduct with very little to do. Cellulose has been pulled out of it before, and whole ground hurd has been used to reinforce composites, but not as extracted microfiber in injection-molded plastics. That gap is the project.</p>
 
@@ -207,10 +207,10 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <tr><th>Variety</th><th>Nominal size</th><th>Measured median<span class="note">optical microscopy, ImageJ</span></th><th>Fiber yield<span class="note">per 10&nbsp;g raw</span></th></tr>
 </thead>
 <tbody>
-<tr><td>Sieve unders</td><td>&gt; 1410&nbsp;Âµm</td><td>748&nbsp;Âµm</td><td><strong>~3.5&nbsp;g</strong></td></tr>
-<tr><td>Mill 30</td><td>1231&nbsp;Âµm</td><td>1230&nbsp;Âµm</td><td>~3.4&nbsp;g</td></tr>
-<tr><td>Mill 60</td><td>1003&nbsp;Âµm</td><td>1003&nbsp;Âµm</td><td>~3.8&nbsp;g</td></tr>
-<tr><td>Mill 99</td><td>227&nbsp;Âµm</td><td>227&nbsp;Âµm</td><td>~1.5&nbsp;g</td></tr>
+<tr><td>Sieve unders</td><td>&gt; 1410&nbsp;µm</td><td>748&nbsp;µm</td><td><strong>~3.5&nbsp;g</strong></td></tr>
+<tr><td>Mill 30</td><td>1231&nbsp;µm</td><td>1230&nbsp;µm</td><td>~3.4&nbsp;g</td></tr>
+<tr><td>Mill 60</td><td>1003&nbsp;µm</td><td>1003&nbsp;µm</td><td>~3.8&nbsp;g</td></tr>
+<tr><td>Mill 99</td><td>227&nbsp;µm</td><td>227&nbsp;µm</td><td>~1.5&nbsp;g</td></tr>
 </tbody>
 </table>
 <p class="fignote">Sieve unders measure well below their nominal grade. The coarsest, least-sieved variety has the widest spread of particle shapes and sizes, which pulls the median down.</p>
@@ -218,10 +218,10 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 <h4>Extraction</h4>
 <p>10&nbsp;g of each grind went through an identical procedure, so any difference in the output traces back to the feedstock rather than the process:</p>
 <ul>
-<li>A two-hour sodium hydroxide wash at 70&nbsp;Â°C</li>
+<li>A two-hour sodium hydroxide wash at 70&nbsp;°C</li>
 <li>Two one-hour bleaching treatments in sodium chlorite</li>
 <li>A 30-minute room-temperature sodium hydroxide wash</li>
-<li>Oven drying at 105&nbsp;Â°C, then grinding</li>
+<li>Oven drying at 105&nbsp;°C, then grinding</li>
 </ul>
 
 <h4>Characterization</h4>
@@ -242,17 +242,17 @@ echo = 1759 us -&gt; 29.90 cm</pre>
 
 <figure class="shot" style="margin-top:28px">
 <img src="assets/hemp-hurd-poster.jpg" alt="Research poster: Extracting Nanocellulose from North Carolina Hemp Hurd Agricultural Waste">
-<figcaption>The full poster, as presented through UNCCâs Office of Undergraduate Research.</figcaption>
+<figcaption>The full poster, as presented through UNCC’s Office of Undergraduate Research.</figcaption>
 </figure>
 <p style="font-size:13.5px; color:var(--muted); margin-top:10px">Poster: Liam Eckhart, Shamar Lindo, Ali Alkhabbaz, Md Shah Nawaz Arafan, and Roger Tipton (PI), Department of Mechanical Engineering, UNC Charlotte. Supported by the Office of Undergraduate Research.</p>
 </article>
 
-<p style="margin-top:36px"><a class="inline-link" href="index.html">â Back home</a></p>
+<p style="margin-top:36px"><a class="inline-link" href="index.html">← Back home</a></p>
 
 </main>
 
 <footer>
-<span>Â© <span class="yr">2026</span> Shamar Lindo</span>
+<span>© <span class="yr">2026</span> Shamar Lindo</span>
 <span class="spacer"><a href="index.html">Home</a></span>
 <a href="mailto:shamardlindo@gmail.com">Email</a>
 <a href="https://github.com/shamardlindo1">GitHub</a>
