@@ -88,7 +88,7 @@ p { margin: 0 0 12px; }
 p:last-child { margin-bottom: 0; }
 
 /* about */
-.about-grid { display: grid; grid-template-columns: 130px 1fr; gap: 24px; align-items: start; }
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start; }
 @media (max-width: 560px) { .about-grid { grid-template-columns: 1fr; } }
 .portrait {
   width: 130px;
